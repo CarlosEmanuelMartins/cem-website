@@ -24,13 +24,13 @@
 
 ## Pro Git
 
-Some of the chapters of this book are bewond the scope of my needs. Chapters 1, 2 and 3 are must reads. Chapters 4 and 6 are optional but intrsting reads.
+Some of the chapters of this book are beyond the scope of my needs. Chapters 1, 2 and 3 are must reads. Chapters 4 and 6 are optional but interesting reads.
 
- I will read the first chapter to have some understanding of what came before. Chapter 2 and 3 are the bread and butter. Chapter 5 and 6 will be read to make me proficent in the current trenads on how to use the platforms.
+ I will read the first chapter to have some understanding of what came before. Chapter 2 and 3 are the bread and butter. Chapter 5 and 6 will be read to make me proficient in the current trends on how to use the platforms.
 
 ### chapters to read:
 
-* [x] Chapter 1 - context and background history 
+* [x] Chapter 1 - context and background history
 * [x] Chapter 2 - The basic
 * [x] Chapter 3 - the defining feature
 * [ ] Chapter 5 - git workflow
@@ -40,8 +40,8 @@ Some of the chapters of this book are bewond the scope of my needs. Chapters 1, 
 
 **End Time**: 17/08/2020
 
-**Description:** Sucess is to be able to deploy web site folder, manage folders in git and do simple pull, push, clone requests from the terminal.
-Also undestand most of the "Gui" even if i cant do some of the tasks in terminal i want to undestant the workflow.
+**Description:** Success is to be able to deploy web site folder, manage folders in git and do simple pull, push, clone requests from the terminal.
+Also undestand most of the "Gui" even if I can do some of the tasks in terminal I want to undestand the workflow.
 
 ## resources
 
@@ -55,13 +55,13 @@ several git hosts -https://www.git-tower.com/blog/git-hosting-services-compared/
 
 ## My previus knowladge of Git
 
-Git is a version controle tecnology, its purpose is to prevent data lose during the several fases of developlment of a project, its particulary usefull when working with other people as on can manage, view, edit, comment and decide witch changes are integrated to the project and witch changes are discarded each person.
+Git is a version controle technology, it's purpose is to prevent data loss during the several fases of developlment of a project, it's particulary useful when working with other people as one can manage, view, edit, comment and decide which changes are integrated to the project and which changes are discarded.
 
-Git also alows for an idividual to clone a project so store a version add changes. later the platforms that implemnt git repositoris or git repos for sorth also add feature relevanto to softwere development such as bug repports.
+Git also allows for an individual to clone a project, so store a version add changes. Later the platforms that implemnts git repositoris or git repos for sorth also add feature relevant to softwere development such as bug repports.
 
-git repos are primarly used to work with text files but can also support other formats. The hosting of projects form the platform that implement free git solutions make it so many user use git as storage amd or sync solution.
+Git repos are primarly used to work with text files but can also support other formats. The hosting of projects from the platform that implements free git solutions makes it so many users use git as storage and/or sync solution.
 
-git seem to be the gold standerd for softwere development version controle and is also used by writers.
+git seem to be the gold standard for softwere development version controll and is also used by writers.
 
 ## table of contents
 
@@ -76,32 +76,32 @@ git seem to be the gold standerd for softwere development version controle and i
 ## installing git
 
 * Using a linux package manager
-* installin on linux from source
-* installing on windows
+* installing on Linux from source
+* installing on Windows
 
 ### Linux
 
 > `sudo apt install git-all`
 
-instaling git in linux using the package manager is simple process just run the above command for "APT" package manager on debian based destribution an equivelent command for  other package managers.
+Instaling git in linux using the package manager is a simple process just run the above command for "APT" package manager on debian based distributions on other distribution you can find them by "distribution name install git"
 
 ### source code
 
-* latest version of git (no true in moder times)
-* if your pakage manager dos not have git
+* latest version of git (not true in modern times)
+* if your package manager dos not have git
 
-This is a more labor intensive aproch, use in the **rare ocassion** ware git is not on your package manager. It used to be that installing from source code would give you the most recent version of git, this seems to be irrelevant now days
+This is a more labor intensive approach, use in the **rare ocassion** where git is not on your package manager. It used to be that installing from source code would give you the most recent version of git, this seems to be irrelevant nowadays
 
 debian based source instalation :
 
-1. install all the dependacys
+1. install all the dependacies
 2. install documentation formats
 3. install `install-info` package
 4. grab the latest tagged release tarball
 5. compile and install the tarball
 
 ```
-1. 
+1.
 sudo apt-get install dh-autoreconf libcurl4-gnutls-dev libexpat1-dev \
 gettext libz-dev libssl-dev
 
@@ -113,7 +113,7 @@ sudo apt-get install install-info
 
 4.
 from kernar.org or from github.com
-"https://www.kernel.org/pub/software/scm/git"  
+"https://www.kernel.org/pub/software/scm/git"
 "https://github.com/git/git/releases"
 
 5.
@@ -125,27 +125,27 @@ $ make all doc info
 $ sudo make install install-doc install-html install-info
 ```
 
-### windows
+### Windows
 
-There are also a few ways to install Git on Windows: 
+There are also a few ways to install Git on Windows:
 
 * The most official build is available for download on the Git website note that this is a project called **Git for Windows**, which is separate from Git itself.
 * You can also use the **Git Chocolatey package** but keep in mind this packed is community maintained.
-* Another easy way to get Git installed is by installing **GitHub Desktop**. The installer includes a command line version of Git as well as the GUI.  
+* Another easy way to get Git installed is by installing **GitHub Desktop**. The installer includes a command line version of Git as well as the GUI.
 
 ## Git Config
 
 Git comes with a tool called git config that lets you get and set configuration variables that control all aspects of how Git looks and operates. These variables can be stored in three different places:
 
-* [path]/etc/gitconfig --> --system --> applis to the system
-* ~/.config/git/config --> --global --> applis to the user
-* config file in the Git directory --> --local --> applis to the folder
+* [path]/etc/gitconfig --> --system --> applies to the system
+* ~/.config/git/config --> --global --> applies to the user
+* config file in the Git directory --> --local --> applies to the folder
 
-The more specific config level is aplied overrides previous levels. Folder config in action then user then system. // cascading
+The more specific the config setting the higher priority it has, thus allowing overriding of previous levels. Folder config in action then user then system. // cascading
 
 ### Quick first time config
 
-When you first install git on your machine theres a few recomened confics you should do the the gloval (user) config file 
+When you first install git on your machine theres a few recomened confics you should do the the global (user) config file
 
 * config your identity
 
@@ -163,14 +163,14 @@ You may see keys more than once, because Git reads the same key from different f
 
 You can also check what Git thinks a specific key’s value is by typing `git config <key>`
 
-Since Git might read the same configuration variable value from more than one
+Since Git might reads the same configuration variable value from more than one
 file, it’s possible that you have an **unexpected value** for one of these values and you don’t know why. In cases like that, **you can query Git as to the origin for that value***, and it will tell you which configuration file had the final say in setting that value:
 
 `$ git config --show-origin <key>`
 
 ### Your Identity
 
-The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+The first thing you should do when you install Git is to set your username and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
 
 ```
 $ git config --global user.name "John Doe"
@@ -225,7 +225,7 @@ other resurces:
 
 # Git the basics
 
-* 
+*
 
 * ## Getting a Git Repository
 
@@ -242,7 +242,7 @@ other resurces:
 cd /home/user/my_project
 
 Type the command:
-$ git init 
+$ git init
 ```
 
 ### clone an existing git repository
@@ -252,7 +252,7 @@ You clone a repository with `git clone <url>`:
 git clone https://github.com/Zettlr/zettlr-docs
 ```
 
-theres other protocoles sutch as ssh (user@server:path/to/repo.git) or git:// protocole
+theres other protocols such as ssh (user@server:path/to/repo.git) or git:// protocol
 
 ## Recoring changes
 
@@ -274,21 +274,21 @@ theres other protocoles sutch as ssh (user@server:path/to/repo.git) or git:// pr
 
 ## File comparison
 
-* `git diff <filename>` - will show the **difference** between the staged and modified version of a file. 
+* `git diff <filename>` - will show the **difference** between the staged and modified version of a file.
 
 * `git diff --staged` -  will show the **difference** between the staged and unmodified (commited) version of a file.
-  
+
   ## Commit history
 
-To see what commits you have made as well as to with branch to they belong and in witch branch your located you can use the `git log`. 
+To see what commits you have made as well as to with branch to they belong and in witch branch your located you can use the `git log`.
 
 ## working with romote repositorys
 
 > what is a remote repository ?
 
-A repote repository is another git repository that not the one your working currently. For exmple When we clone a repo we crete a copy of the ripo own our system, the original version of the ripo is to us a remote repository.
+A remote repository is another git repository that not the one your working currently. For exmple When we clone a repo we create a copy of the repo on our system, the original version of the repo is to us a remote repository.
 
-remote repositorys are important beacuse when working with multiple people, each person will create there own repos as to make it easyer to debug and prevent two people simultaniusly modify the same file.
+remote repositories are important because when working with multiple people, each person will create there own repos as to make it easier to debug and prevent two people simultaneously modify the same file.
 
 Theres 2 major action to do to remote repos:
 
@@ -298,7 +298,7 @@ Theres 2 major action to do to remote repos:
 
 * Pull -
 
-on top of this you need to be able to see what remotes you have, and new remote repositorys, renaming.
+on top of this you need to be able to see what remotes you have, and new remote repositories, renaming.
 
 * see current remote repos - `git remote show`
 * see remote repo detail - `git remote show <remote>`
@@ -308,7 +308,7 @@ on top of this you need to be able to see what remotes you have, and new remote 
 
 ### Add, remove and rename remotes
 
-The `git clone <url>` command **implicitly adds the origin remote** for you. To add a new remote Git run: `git remote add <shortname> <url>`. 
+The `git clone <url>` command **implicitly adds the origin remote** for you. To add a new remote Git run: `git remote add <shortname> <url>`.
 
 To remove a remote run the command `git remote remove <shortname>. Once you delete the reference to a remote this way, all remote-tracking branches and configuration settings associated with that remote are also deleted.
 
@@ -320,7 +320,7 @@ To see more information about a particular remote, you can use the `git remote s
 
 ## Tags
 
-Git has the ability to tag specific points in a repository’s history as being important. ypically, people use this functionality to mark release points (v1.0, v2.0 and so on).
+Git has the ability to tag specific points in a repository’s history as being important. typically, people use this functionality to mark release points (v1.0, v2.0 and so on).
 
 ### See tags
 
@@ -330,14 +330,14 @@ You can see the tag data along with the commit that was tagged by using the git 
 
 ### Create tags
 
-Git supports two types of tags: 
+Git supports two types of tags:
 
 * lightweight
 * annotated
 
 A **lightweight** tag it’s just a pointer to a specific commit.
 
-**Annotated tags are stored as full objects in the Git database**. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG). 
+**Annotated tags are stored as full objects in the Git database**. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG).
 
 It’s generally recommended that you create annotated tags so you can have all this information; but if you want a temporary tag or for some reason don’t want to keep the other information, lightweight tags are available too.
 
@@ -396,7 +396,7 @@ This means that, for example, instead of typing git commit, you just need to typ
 
 ![git-branch.png](D:\000-activeprojects\git\git-branch.png)
 
-* create branch - `git branch <filename>` 
+* create branch - `git branch <filename>`
 * switch branch - `git checkout <branch name>`
 * merge branch - `git merge <brach name>` will merge the current branch with the `<branch name>`
 * delete branch - `git branch -d <branch_name>`
